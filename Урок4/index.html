@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Список дел</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<div id="popupContainer">
+		<div id="popupWindow">Заполните поля!</div>
+	</div>
+	<div class="container">
+	<div class="toDoList col-6" >
+		<h2>Список дел:</h2>
+		<div class="wrapper"></div>
+
+	</div>
+
+	<div class="task-creator col-6">
+		<h2>Добавить новое дело</h2>
+		<div class="task-form">
+			<b>*Название</b><br><br>
+			<input id="taskName" name="taskName" required="required" type="text" cols="40" rows="5"><br><br>
+			<b>*Название</b><br><br>
+			<textarea id="taskDescription" name="taskDescription" required="required" type="text" cols="40" rows="20"></textarea><br><br>
+			<button id="addTask">Добавить дело</button>
+		</div>
+	</div>
+	</div>
+</body>
+</html>

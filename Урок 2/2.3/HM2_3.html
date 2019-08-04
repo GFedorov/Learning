@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+	<title>Отправка заявки на конференцию</title>
+	</head>
+	<body>
+		<h1> Отправка заявки на конференцию </h1>
+	<h2> Основные данные </h2>
+	<b>* Фамилия Имя Отчество:</b>
+	<br><br>
+	<form action="mailto:zayavka@conf.ru" method="post"> 
+	<input  name="fio" required="required" type="text" size="40" ><br><br>
+	<b>Дата рождения:</b><br><br>
+	<input type="date" name="date-of-birth" size="40">	<br><br>
+	<b>Пол:</b><br><br>
+	<input id="Male" value="male" type="radio" name="male-female">&nbsp;<label for="Male"> Мужской </label>
+	<input id="Female" value="female" type="radio" name="male-female">&nbsp;<label for="Female"> Женский </label>
+	<h2> Данные для создания личного кабинета </h2>
+	<b>* Адрес электронной почты:</b>
+	<br><br>
+	<input name="email" required="required" type="email" size="40">
+	<br><br>
+	<b>* Пароль для создания личного кабинета:</b>
+	<br><br>
+	<input name="passw" required="required" type="password" size="40">
+	<br><br>
+	<b>* Подтверждение пароля:</b>
+	<br><br>
+	<input name="repassw" required="required" type="password" size="40">
+	<br><br>
+	<h2> Основные данные </h2><br>
+	<b>* Тема доклада</b><br><br>
+	<input name="topic" required="required" type="text" size="40"><br><br>
+	<b>* Тезисы доклада</b><br><br>
+	<textarea name="theses" required="required" maxlength="1000" cols="40" rows="10"> </textarea><br><br>
+	<b> Файл презентации </b><br><br>
+	<input name="imp-file" type="file"><br><br>
+	<b> Файл презентации </b><br><br>
+	<input id="Live_in_Hotel" name="live-in-hotel" type="checkbox">&nbsp;<label for="Live_in_Hotel"> Проживание в отеле </label><br>
+	<input id="Breakfast" name="breakfast" type="checkbox" checked="checked">&nbsp;<label for="Breakfast"> Завтрак </label><br>
+	<input id="Lunch" name="lunch" type="checkbox">&nbsp;<label for="Lunch"> Обед </label><br>
+	<input id="Dinner" name="dinner" type="checkbox">&nbsp;<label for="Dinner"> Ужин </label><br><br>
+	<hr>
+	<input name="sub-button" type="submit"  value="Отправить">
+	<hr>
+	<small>* Поля, отмеченные звездочкой, обязательные для заполения</small>
+	</form>
+
+		
+	</body>
+</html>
