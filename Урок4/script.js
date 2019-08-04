@@ -20,11 +20,18 @@ $(function() {
 
         if (anyTaskDesc.length == 0) {
             $(popupContainer).show();
+            $("html,body").addClass("fixed");
         }
         else {
             $('.wrapper').append(toDoItem);
 
         }
     });
+    $('#popupContainer').click(function(event) {
+        if (event.target == this) {
+        $(this).hide();
+        $("html,body").removeClass("fixed");
+        }
+    })
 
 });
