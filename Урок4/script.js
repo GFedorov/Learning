@@ -1,4 +1,4 @@
-$(function() {
+    $(function() {
     $('#addTask').click(function() {
         var anyTaskName = $("input[name=taskName]").val();
         var anyTaskDesc = $("textarea[name=taskDescription]").val();
